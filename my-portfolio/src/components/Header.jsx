@@ -1,4 +1,3 @@
-// src/components/Header.jsx
 import { useState, useEffect } from 'react';
 import { FiMenu } from 'react-icons/fi'; // Importing burger icon from react-icons
 
@@ -29,14 +28,14 @@ export default function Header() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-white">
-          <a href="#">MyLogo</a>
+          <a href="#">Tofiek Sasman.</a>
         </div>
 
         {/* Menu Items (Desktop) */}
         <nav className="hidden md:flex space-x-8">
           <a href="#home" className="text-white">Home</a>
           <a href="#about" className="text-white">About</a>
-          <a href="#services" className="text-white">Services</a>
+          <a href="#projects" className="text-white">Projects</a>
           <a href="#contact" className="text-white">Contact</a>
         </nav>
 
