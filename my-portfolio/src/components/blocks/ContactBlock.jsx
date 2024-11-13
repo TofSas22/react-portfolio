@@ -2,9 +2,9 @@ import React from 'react';
 
 const ContactBlock = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 bg-gray-200 rounded-lg shadow-md h-full w-full">
+    <div className="flex flex-col items-center justify-center p-4 frosted-glass rounded-lg shadow-md h-full w-full">
       {/* Heading */}
-      <h3 className="text-lg font-bold text-gray-800 mb-2">CONTACT ME</h3>
+      <h3 className="text-lg font-bold text-gray-50 mb-2">CONTACT ME</h3>
       
       {/* Contact Button */}
       <a

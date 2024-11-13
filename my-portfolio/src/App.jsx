@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Header />
-      <div className="mt-16">
+      <div className="mt-20 px-24">
         <BentoBox />
       </div>
     </div>

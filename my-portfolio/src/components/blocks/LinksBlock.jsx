@@ -3,9 +3,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const LinksBlock = () => {
   return (
-    <div className="flex flex-col items-center p-4 bg-gray-200 rounded-lg shadow-md w-full h-full">
+    <div className="flex flex-col items-center justify-center p-4 frosted-glass rounded-lg shadow-md w-full h-full">
       {/* Heading */}
-      <h3 className="text-6xl font-bold text-gray-800 mb-2">LINKS</h3>
+      <h3 className="text-6xl font-bold text-gray-50 mb-2">LINKS</h3>
 
       {/* Icon Links */}
       <div className="flex space-x-4">
@@ -14,7 +14,7 @@ const LinksBlock = () => {
           href="https://github.com/TofSas22"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 hover:text-blue-500"
+          className="text-gray-50 hover:text-blue-500"
         >
           <FaGithub size={80} />
         </a>
@@ -24,7 +24,7 @@ const LinksBlock = () => {
           href="https://linkedin.com/in/tofieksas"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 hover:text-blue-500"
+          className="text-gray-50 hover:text-blue-500"
         >
           <FaLinkedin size={80} />
         </a>

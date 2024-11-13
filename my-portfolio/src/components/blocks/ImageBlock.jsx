@@ -2,7 +2,7 @@ import React from 'react';
 
 const ImageBlock = () => {
   return (
-    <div className="col-span-2 row-span-3">
+    <div className="col-span-2 row-span-3 w-full h-full">
       <img 
         src="src/assets/profile-pic.jpeg" 
         alt="Your Name" 

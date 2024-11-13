@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutBlock = () => {
   return (
-    <div className="p-6 bg-blue-500 rounded-lg shadow-md w-full h-full">
-      <h2 className="text-3xl font-bold text-white">About Me</h2>
-      <p className="mt-4 text-white">
+    <div className="p-6 frosted-glass rounded-lg shadow-md w-full h-full">
+      <h2 className="text-3xl font-bold text-gray-50">About Me</h2>
+      <p className="mt-4 text-gray-50">
         My journey into web development began when I realized the power of
         coding to bring ideas to life. Whether it's building interactive
         websites, optimizing user experiences, or diving into backend systems, I

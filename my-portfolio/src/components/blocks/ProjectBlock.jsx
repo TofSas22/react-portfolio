@@ -2,35 +2,35 @@ import React from "react";
 
 const ProjectsBlock = () => {
   return (
-    <div className="flex flex-col items-center p-4 bg-gray-200 rounded-lg shadow-md h-full w-full">
+    <div className="flex flex-col items-center p-4 frosted-glass rounded-lg shadow-md h-full w-full">
       {/* Heading */}
-      <h3 className="text-lg font-bold text-gray-800 mb-3">PROJECTS</h3>
+      <h3 className="text-lg font-bold text-gray-50 mb-3">PROJECTS</h3>
 
       {/* Project Previews (Add examples or project links) */}
       <div className="flex flex-col space-y-2 w-full">
         <a
-          href="https://example.com/project1"
+          href="https://tofsas22-itvarsity.github.io/Module-6-Assessment-2/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
-          Project 1
+          Auto4Sale
         </a>
         <a
-          href="https://example.com/project2"
+          href="https://tofsas22-itvarsity.github.io/Module-11-Assessment-2-/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
-          Project 2
+          FoodieFanatix
         </a>
         <a
-          href="https://example.com/project3"
+          href="https://tofsas22-itvarsity.github.io/Module-12-Assessment-2/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-blue-500 hover:underline"
         >
-          Project 3
+          Contact Book App
         </a>
       </div>
     </div>
