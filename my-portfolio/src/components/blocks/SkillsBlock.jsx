@@ -4,9 +4,9 @@ import { SiTailwindcss, SiZsh } from 'react-icons/si';
 
 const SkillsBlock = () => {
   return (
-    <div className="flex flex-col items-center p-4 frosted-glass rounded-lg shadow-md h-full w-full">
+    <div className="flex flex-col items-center p-4 frosted-glass rounded-lg shadow-md h-full w-full transition-transform duration-300 hover:scale-105">
       {/* Heading */}
-      <h3 className="text-lg font-bold text-gray-50 mb-4">SKILLS</h3>
+      <h3 className="text-2xl font-bold text-gray-50 mb-4">SKILLS</h3>
 
       {/* Icons */}
       <div className="flex flex-wrap justify-center gap-4">

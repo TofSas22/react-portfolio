@@ -8,8 +8,8 @@ body {
 }
 
 .frosted-glass {
-  background-color: rgba(27, 34, 100, 0.7); /* Semi-transparent white background */
-  border-radius: 10px; /* Optional: rounded corners */
-  backdrop-filter: blur(0.5px); /* Apply blur for frosted glass effect */
-  -webkit-backdrop-filter: blur(0.5px); /* For Safari support */
+  background-color: rgba(27, 34, 100, 0.7);
+  border-radius: 10px; 
+  backdrop-filter: blur(0.5px);
+  -webkit-backdrop-filter: blur(0.5px);
 }
