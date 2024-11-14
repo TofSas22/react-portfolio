@@ -4,34 +4,44 @@ import Card from "./Card";
 const Projects = () => {
   const projects = [
     {
-      image: "link-to-image1.jpg",
-      description: "Project 1 description goes here.",
-      codeLink: "https://github.com/link-to-code1",
-      siteLink: "https://link-to-site1.com"
+      heading: "react-tailwind portfolio",
+      image: "src/assets/react-portfolio.png",
+      description:
+        "Building this portfolio site has been an exciting journey of combining design and development skills. I wanted a unique, modern aesthetic, so I chose a bento-box layout for the hero section, where each block highlights different aspects like About Me, Projects, Skills, and Contact. This project has been an opportunity to practice responsive design, component-based structure, and interactivity, creating a fun and functional site that truly represents my skills and style as a developer.",
+      codeLink: "https://github.com/TofSas22/react-portfolio",
+      siteLink: "#",
     },
     {
-      image: "link-to-image2.jpg",
-      description: "Project 2 description goes here.",
-      codeLink: "https://github.com/link-to-code2",
-      siteLink: "https://link-to-site2.com"
+      heading: "FoodieFanatix",
+      image: "src/assets/foodieFantix.png",
+      description:
+        "The FoodieFanatix project was a scenario assignment designed to simulate building a website for a fictional food blogger named Claire. Using HTML, CSS, Bootstrap, and JavaScript, I created a responsive, visual layout for her food reviews, optimizing it for both mobile and desktop viewing. This project was a great exercise in combining design and functionality for an engaging user experience.",
+      codeLink: "https://github.com/TofSas22-ITvarsity/Module-11-Assessment-2-",
+      siteLink: "https://tofsas22-itvarsity.github.io/Module-11-Assessment-2-/",
     },
     {
-      image: "link-to-image2.jpg",
-      description: "Project 2 description goes here.",
-      codeLink: "https://github.com/link-to-code2",
-      siteLink: "https://link-to-site2.com"
+      heading: "Auto4Sale",
+      image: "src/assets/Auto4Sale.png",
+      description:
+        "The Auto4Sale project was a scenario website built using HTML and CSS for a fictional car dealership. It includes a homepage with company information and featured vehicles, a listing page for cars with images and details, and a contact page featuring company contact details and a form. This project was a hands-on exercise in creating a simple, structured layout for a business-oriented website.",
+      codeLink: "https://github.com/TofSas22-ITvarsity/Module-6-Assessment-2",
+      siteLink: "https://tofsas22-itvarsity.github.io/Module-6-Assessment-2/",
     },
     {
-      image: "link-to-image2.jpg",
-      description: "Project 2 description goes here.",
-      codeLink: "https://github.com/link-to-code2",
-      siteLink: "https://link-to-site2.com"
+      heading: "Pokedex",
+      image: "src/assets/pokedex.png",
+      description:
+        "The Pokémon Search App is a project built with HTML, CSS, and JavaScript. It allows users to search for Pokémon by name or ID, displaying results that include data and images fetched from freeCodeCamp's PokéAPI Proxy. This project was a fun way to work with APIs and dynamic content, creating an engaging, interactive experience for users.",
+      codeLink: "https://github.com/TofSas22/pokedex",
+      siteLink: "https://tofsas22.github.io/pokedex/",
     },
     {
-      image: "link-to-image2.jpg",
-      description: "Project 2 description goes here.",
-      codeLink: "https://github.com/link-to-code2",
-      siteLink: "https://link-to-site2.com"
+      heading: "Countdown Timer",
+      image: "src/assets/countdown timer.png",
+      description:
+        "The Countdown Timer project is a custom-built app using HTML, CSS, and JavaScript. Designed with a unique UI, this timer offers a fresh look and feel, making the most of creative CSS styling. It’s a fun, interactive tool that showcases CSS skills and adds a personal twist to a classic countdown feature.",
+      codeLink: "https://github.com/TofSas22-ITvarsity/Module-9-Assessment-1",
+      siteLink: "https://tofsas22-itvarsity.github.io/Module-9-Assessment-1/",
     },
   ];
 
@@ -42,6 +52,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <Card
             key={index}
+            heading={project.heading}
             image={project.image}
             description={project.description}
             codeLink={project.codeLink}

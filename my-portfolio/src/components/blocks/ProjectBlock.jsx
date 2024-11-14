@@ -38,7 +38,7 @@ const ProjectsBlock = () => {
 
       <a
         className="flex items-center py-2 text-white font-semibold hover:text-gray-200 transition-colors duration-200"
-        href="#"
+        href="#projects"
       >
         View More
         <FaLongArrowAltRight className="ml-2 transform transition-transform duration-200 group-hover:translate-x-1" />

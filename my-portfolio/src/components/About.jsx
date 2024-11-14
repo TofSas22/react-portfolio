@@ -20,11 +20,15 @@ const About = () => {
       <div className="w-1/2 text-white">
         <h1 className="text-3xl font-bold mb-4">More About Me</h1>
         <p className="text-lg">
-          I'm passionate about tech, constantly learning and growing in the
-          field of web development. With a background in JavaScript, React,
-          and backend skills, I aim to build intuitive and impactful digital
-          experiences. Outside of coding, I enjoy [mention hobbies or other
-          personal details that highlight your personality or interests].
+          I’m passionate about tech and driven by the challenge of constantly
+          learning and growing in web development. With a strong foundation in
+          frontend technologies and a growing interest in backend skills, my
+          goal is to create intuitive and impactful digital experiences.
+          <br />
+          <br />I thrive on setting ambitious goals and working hard to achieve
+          them. But what I love most is collaborating with a team, sharing the
+          journey, and celebrating our successes together. There’s nothing
+          better than achieving something great as a unit!
         </p>
       </div>
     </div>

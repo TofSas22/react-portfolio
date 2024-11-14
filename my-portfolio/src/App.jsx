@@ -13,7 +13,9 @@ function App() {
         <BentoBox />
         <br />
         <About />
+        <br />
         <Projects />
+        <br />
         <Contact />
       </div>
       <Footer />
