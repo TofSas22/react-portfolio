@@ -9,7 +9,7 @@ import HobbiesBlock from "./blocks/Hobbies";
 
 const BentoGrid = () => {
   return (
-    <div className="grid grid-cols-6 grid-rows-2 gap-4 mt-20">
+    <div id="home" className="grid grid-cols-6 grid-rows-2 gap-4 mt-20">
       <div className="col-span-2 row-span-2">
         <ImageBlock />
       </div>

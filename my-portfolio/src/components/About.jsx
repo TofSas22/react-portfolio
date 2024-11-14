@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex items-center space-x-6 p-4 mt-12">
+    <div id="about" className="flex items-center space-x-6 p-4 mt-12">
       {/* Lottie Animation */}
       <div className="w-1/2">
         <lottie-player
