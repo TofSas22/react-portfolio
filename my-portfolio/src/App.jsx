@@ -1,13 +1,14 @@
 import Header from "./components/Header";
 import BentoBox from "./components/BentoBox";
+import About from "./components/About";
 
 function App() {
   return (
-    <div>
+    <div className="px-24">
       <Header />
-      <div className="mt-20 px-24">
-        <BentoBox />
-      </div>
+      <BentoBox /> {/* Hero section */}
+      <br />
+      <About />
     </div>
   );
 }

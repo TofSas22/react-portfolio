@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { FiMenu } from 'react-icons/fi'; // Importing burger icon from react-icons
+import { useState, useEffect } from "react";
+import { FiMenu } from "react-icons/fi";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,10 +10,10 @@ export default function Header() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50); // Add blur effect after scrolling down 50px
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -21,8 +21,8 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 w-full p-4 transition-all ${
         isScrolled
-          ? 'backdrop-blur-lg bg-white bg-opacity-30 shadow-lg'
-          : 'bg-transparent'
+          ? "backdrop-blur-lg bg-white bg-opacity-30 shadow-lg"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -33,10 +33,18 @@ export default function Header() {
 
         {/* Menu Items (Desktop) */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#home" className="text-white">Home</a>
-          <a href="#about" className="text-white">About</a>
-          <a href="#projects" className="text-white">Projects</a>
-          <a href="#contact" className="text-white">Contact</a>
+          <a href="#home" className="text-white">
+            Home
+          </a>
+          <a href="#about" className="text-white">
+            About
+          </a>
+          <a href="#projects" className="text-white">
+            Projects
+          </a>
+          <a href="#contact" className="text-white">
+            Contact
+          </a>
         </nav>
 
         {/* Burger Button (Mobile) */}
@@ -51,10 +59,18 @@ export default function Header() {
         {isMenuOpen && (
           <div className="absolute top-0 right-0 bg-white bg-opacity-90 p-4 rounded-lg mt-16 md:hidden">
             <nav className="space-y-4">
-              <a href="#home" className="block text-black">Home</a>
-              <a href="#about" className="block text-black">About</a>
-              <a href="#services" className="block text-black">Services</a>
-              <a href="#contact" className="block text-black">Contact</a>
+              <a href="#home" className="block text-black">
+                Home
+              </a>
+              <a href="#about" className="block text-black">
+                About
+              </a>
+              <a href="#services" className="block text-black">
+                Services
+              </a>
+              <a href="#contact" className="block text-black">
+                Contact
+              </a>
             </nav>
           </div>
         )}
