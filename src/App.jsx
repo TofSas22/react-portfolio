@@ -4,10 +4,12 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SEO from "./components/SEO";
 
 function App() {
   return (
     <>
+      <SEO />
       <Header />
       <div className="px-24">
         <BentoBox />
