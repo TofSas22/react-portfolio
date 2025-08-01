@@ -32,28 +32,32 @@ describe('Header', () => {
 
   it('toggles mobile menu when burger button is clicked', () => {
     render(<Header />)
-    
+
     const burgerButton = screen.getByRole('button')
-    expect(screen.queryByText('Services')).not.toBeInTheDocument()
-    
+    expect(
+      screen.queryByLabelText('Mobile navigation menu')
+    ).not.toBeInTheDocument()
+
     fireEvent.click(burgerButton)
-    expect(screen.getByText('Services')).toBeInTheDocument()
-    
+    expect(screen.getByLabelText('Mobile navigation menu')).toBeInTheDocument()
+
     fireEvent.click(burgerButton)
-    expect(screen.queryByText('Services')).not.toBeInTheDocument()
+    expect(
+      screen.queryByLabelText('Mobile navigation menu')
+    ).not.toBeInTheDocument()
   })
 
   it('applies blur effect when scrolled', () => {
     const { container } = render(<Header />)
     const header = container.querySelector('header')
-    
+
     expect(header).toHaveClass('bg-transparent')
     expect(header).not.toHaveClass('backdrop-blur-lg')
-    
+
     // Simulate scroll
     window.scrollY = 100
     fireEvent.scroll(window)
-    
+
     // Note: This test would need a more complex setup to properly test scroll events
     // For now, we'll just verify the component renders without errors
     expect(header).toBeInTheDocument()

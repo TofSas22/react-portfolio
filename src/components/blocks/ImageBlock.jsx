@@ -1,16 +1,17 @@
-import React from 'react';
-import profilePic from '../../images/profile-pic.jpeg';
+import React from 'react'
+import LazyImage from '../LazyImage'
+import profilePic from '../../images/profile-pic.jpeg'
 
 const ImageBlock = () => {
   return (
     <div className="col-span-2 row-span-3 w-full h-full">
-      <img
-        src={profilePic} // Use the imported image
-        alt="Your Name"
-        className="w-full h-full object-cover rounded-lg shadow-md"
+      <LazyImage
+        src={profilePic}
+        alt="Tofiek Sasman - Profile Picture"
+        className="w-full h-full rounded-lg shadow-md"
       />
     </div>
-  );
-};
+  )
+}
 
-export default ImageBlock;
+export default ImageBlock

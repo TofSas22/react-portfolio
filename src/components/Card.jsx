@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react'
+import LazyImage from './LazyImage'
 
 const Card = ({ heading, image, description, icon, codeLink, siteLink }) => {
   return (
@@ -8,10 +9,10 @@ const Card = ({ heading, image, description, icon, codeLink, siteLink }) => {
         <h3 className="text-xl font-bold text-white mb-2 text-center">
           {heading}
         </h3>
-        <img
+        <LazyImage
           src={image}
-          alt="Project"
-          className="w-full h-48 object-cover rounded-lg"
+          alt={`${heading} project screenshot`}
+          className="w-full h-48 rounded-lg"
         />
       </div>
 
@@ -20,27 +21,27 @@ const Card = ({ heading, image, description, icon, codeLink, siteLink }) => {
         <p className="text-white">{description}</p>
       </div>
 
-        {/* Links row */}
-        <div className="flex justify-between border-t border-gray-500 pt-4">
-          <a
-            href={codeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition"
-          >
-            Code
-          </a>
-          <a
-            href={siteLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-300 transition"
-          >
-            Live Site
-          </a>
-        </div>
+      {/* Links row */}
+      <div className="flex justify-between border-t border-gray-500 pt-4">
+        <a
+          href={codeLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 transition"
+        >
+          Code
+        </a>
+        <a
+          href={siteLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:text-blue-300 transition"
+        >
+          Live Site
+        </a>
       </div>
-  );
-};
+    </div>
+  )
+}
 
-export default Card;
+export default Card
