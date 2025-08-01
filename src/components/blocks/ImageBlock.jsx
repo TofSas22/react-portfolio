@@ -1,6 +1,6 @@
 import React from 'react'
 import LazyImage from '../LazyImage'
-import profilePic from '../../images/profile-pic.jpeg'
+import profilePic from '../../images/Photo.jpeg'
 
 const ImageBlock = () => {
   return (
